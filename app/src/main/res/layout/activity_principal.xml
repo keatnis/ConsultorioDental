@@ -5,9 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Principal">
-
-
+    tools:context=".Principal"
+    android:background="#CDE9ED">
 
 
 
@@ -15,14 +14,14 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            android:background="@drawable/logo" />
+            android:background="@drawable/log" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Consultorio Dental"
-        android:textColor="@color/teal_200"
+        android:textColor="#152E73"
         android:textSize="25dp"
         android:fontFamily="@font/amsterdam_personal"
         android:gravity="center"/>
@@ -62,6 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="top"
+                android:background="#63CFE9F8"
                 android:orientation="vertical">
 
             <ImageView
@@ -83,10 +83,6 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cvProductos"
@@ -98,6 +94,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="top"
+                    android:background="#63CFE9F8"
                     android:orientation="vertical">
 
                     <ImageView
@@ -121,4 +118,3 @@
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
     </LinearLayout>
-</LinearLayout>
