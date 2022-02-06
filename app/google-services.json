@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "527760158110",
+    "project_id": "tutorial-be998",
+    "storage_bucket": "tutorial-be998.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:527760158110:android:7c89d0aff2a4dab2c27a8f",
+        "android_client_info": {
+          "package_name": "com.mxss.act_18"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "527760158110-78ps1ss6mdlk934butgt4holdr550820.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiuEyG6G1ES8jL3nH4V-m-PhmZXfy7-FQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "527760158110-78ps1ss6mdlk934butgt4holdr550820.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
