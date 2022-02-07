@@ -3,13 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Huawei/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_lista_citas.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Huawei/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/Huawei/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_principal.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Huawei/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_registrar_paciente.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Huawei/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_servicios.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Huawei/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/registrar_cita.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout-land/activity_principal.xml" value="0.2208994708994709" />
         <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_principal.xml" value="0.2609375" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_servicios.xml" value="0.2609375" />
       </map>
     </option>
   </component>
