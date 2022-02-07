@@ -9,12 +9,11 @@
     android:background="#CDE9ED">
 
 
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:background="@drawable/log" />
+    <ImageView
+        android:layout_width="157dp"
+        android:layout_height="107dp"
+        android:layout_gravity="center"
+        android:background="@drawable/logo3" />
 
     <TextView
         android:id="@+id/textView3"
@@ -52,7 +51,7 @@
         >
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/Ver_citas"
+            android:id="@+id/cvAgendar"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_margin="10dp">
@@ -85,7 +84,7 @@
 
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cvProductos"
+                    android:id="@+id/cvVer"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_margin="10dp">
