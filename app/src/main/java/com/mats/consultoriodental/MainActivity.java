@@ -1,28 +1,51 @@
 package com.mats.consultoriodental;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-
+    EditText usuario, password;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button entrar = findViewById(R.id.btnEntrar);
+        usuario = (EditText) findViewById(R.id.txtUsuario);
+        password = (EditText) findViewById(R.id.txtPwd);
 
+    }
 
-        entrar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), Principal.class);
-                v.getContext().startActivity(intent);
+    public void Login (View view) {
+        String usr = usuario.getText().toString();
+        String pwd = password.getText().toString();
+        if (usr.isEmpty() || pwd.isEmpty()) {
+            AlertDialog.Builder msg = new AlertDialog.Builder(this);
+            msg.setTitle("Autenticacion");
+            msg.setTitle("Faltan Datos");
+            msg.setPositiveButton("Ok", null);
+            msg.create();
+            msg.show();
+        } else {
+            if (usr.equals("Admi") && pwd.equals("12345")) {
+                Intent i = new Intent(this, Principal.class);
+                i.putExtra("usuario", usr);
+                startActivity(i);
+            } else {
+                AlertDialog.Builder msg = new AlertDialog.Builder(this);
+                msg.setTitle("Autenticacion");
+                msg.setMessage("Usuario/contraseña invalidos");
+                msg.setPositiveButton("Ok", null);
+                msg.create();
+                msg.show();
             }
-        });
+
+        }
     }
 }
+

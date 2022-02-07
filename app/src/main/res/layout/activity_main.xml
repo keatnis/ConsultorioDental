@@ -19,7 +19,7 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ingresar"
+            android:text="INGRESAR"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="18sp"
@@ -48,7 +48,8 @@
             android:id="@+id/txtUsuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Usuario" />
+            android:hint="Usuario"
+            />
 
         <requestFocus />
 
@@ -67,7 +68,8 @@
             android:layout_gravity="center"
             android:backgroundTint="#B8E5EC"
             android:onClick="Login"
-            android:text="Entrar" />
+            android:text="Entrar"
+            android:textColor="#152E73" />
 
 
 
