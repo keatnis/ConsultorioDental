@@ -4,26 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#CDE9ED"
     android:orientation="vertical"
-    tools:context=".Principal"
-    android:background="#CDE9ED">
+    tools:context=".Principal">
 
 
     <ImageView
-        android:layout_width="157dp"
+        android:layout_width="134dp"
         android:layout_height="107dp"
         android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:background="@drawable/logo3" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/amsterdam_personal"
+        android:gravity="center"
         android:text="Consultorio Dental"
         android:textColor="#152E73"
-        android:textSize="25dp"
-        android:fontFamily="@font/amsterdam_personal"
-        android:gravity="center"/>
+        android:textSize="25dp" />
 
 
     <Space
@@ -34,9 +35,9 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="AGENDA DE CITAS"
-        android:textSize="20dp"
-        android:gravity="center"/>
+        android:textSize="20dp" />
 
 
     <Space
@@ -46,9 +47,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:gravity="center"
-        >
+        android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cvAgendar"
@@ -59,61 +59,61 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="top"
                 android:background="#63CFE9F8"
+                android:gravity="top"
                 android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/ivIcon1"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                app:srcCompat="@drawable/nueva_cita" />
+                <ImageView
+                    android:id="@+id/ivIcon1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/nueva_cita" />
 
-            <TextView
-                android:id="@+id/tvNuestrosProductos"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Agendar Cita"
-                android:textColor="#000"
-                android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvNuestrosProductos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Agendar Cita"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cvVer"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_margin="10dp">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvVer"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp">
 
-                <LinearLayout
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#63CFE9F8"
+                android:gravity="top"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivIcon2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/citas" />
+
+                <TextView
+                    android:id="@+id/tvCitas"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="top"
-                    android:background="#63CFE9F8"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Ver Citas"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
 
-                    <ImageView
-                        android:id="@+id/ivIcon2"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_gravity="center"
-                        app:srcCompat="@drawable/citas" />
-
-                    <TextView
-                        android:id="@+id/tvCitas"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="Ver Citas"
-                        android:textColor="#000"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
             </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
+</LinearLayout>
