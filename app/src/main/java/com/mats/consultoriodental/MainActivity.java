@@ -7,10 +7,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
     EditText usuario, password;
+    Button entrar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         try {
@@ -23,8 +25,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        usuario = (EditText) findViewById(R.id.txtUsuario);
-        password = (EditText) findViewById(R.id.txtPwd);
+        usuario =  findViewById(R.id.txtUsuario);
+        password = findViewById(R.id.txtPwd);
+        entrar = findViewById(R.id.btnEntrar);
+
+
+        entrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent visor=new Intent(getApplicationContext(), Principal.class);
+                startActivity(visor);
+            }
+        });
+
 
     }
 

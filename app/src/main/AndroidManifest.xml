@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ConsultorioDental">
         <activity
+            android:name=".modificar_paciente"
+            android:exported="true" />
+        <activity
+            android:name=".listado_paciente"
+            android:exported="true" />
+        <activity
             android:name=".RegistrarPaciente"
             android:exported="true" />
         <activity
@@ -17,9 +23,6 @@
             android:exported="true" />
         <activity
             android:name=".Principal"
-            android:exported="true" />
-        <activity
-            android:name=".RegistrarCita"
             android:exported="true" />
         <activity
             android:name=".Servicios"
