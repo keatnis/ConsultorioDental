@@ -49,6 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Usuario"
+            android:drawableLeft="@drawable/person"
             />
 
         <requestFocus />
@@ -59,7 +60,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Contraseña"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"/>
 
         <Button
             android:id="@+id/btnEntrar"
@@ -70,6 +72,7 @@
             android:onClick="Login"
             android:text="Entrar"
             android:textColor="#152E73" />
+
 
 
 
