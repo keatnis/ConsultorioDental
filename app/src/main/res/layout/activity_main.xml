@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    >
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#CDE9ED"
-        android:minHeight="?attr/actionBarSize"
-        >
+        android:minHeight="?attr/actionBarSize">
 
         <TextView
             android:id="@+id/textView"
@@ -30,11 +30,11 @@
         android:id="@+id/linearL1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:gravity="center"
         android:layout_marginHorizontal="50dp"
-        android:layout_marginTop="75dp"
-        android:orientation="vertical">
+        android:layout_marginVertical="100dp"
 
+        android:orientation="vertical">
 
 
         <ImageView
@@ -43,14 +43,12 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/dentista" />
 
-
         <EditText
             android:id="@+id/txtUsuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Usuario"
             android:drawableLeft="@drawable/person"
-            />
+            android:hint="Usuario" />
 
         <requestFocus />
 
@@ -59,9 +57,9 @@
             android:id="@+id/txtPwd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
             android:hint="Contraseña"
-            android:inputType="textPassword"
-            android:drawableLeft="@drawable/ic_baseline_lock_24"/>
+            android:inputType="textPassword" />
 
         <Space
             android:layout_width="match_parent"
@@ -76,8 +74,6 @@
             android:onClick="Login"
             android:text="Entrar"
             android:textColor="#152E73" />
-
-
 
 
     </LinearLayout>
