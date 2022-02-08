@@ -13,6 +13,13 @@ public class MainActivity extends AppCompatActivity {
     EditText usuario, password;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        try {
+            Thread.sleep(2500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        setTheme(R.style.Theme_ConsultorioDental);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
