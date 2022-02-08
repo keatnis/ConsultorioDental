@@ -63,6 +63,10 @@
             android:inputType="textPassword"
             android:drawableLeft="@drawable/ic_baseline_lock_24"/>
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="26dp" />
+
         <Button
             android:id="@+id/btnEntrar"
             android:layout_width="wrap_content"
