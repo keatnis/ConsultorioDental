@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="@drawable/logo3"
+    android:foregroundGravity="center"
+    android:orientation="vertical"
+    tools:context=".tratamiento_nino">
+
+    <android.widget.Toolbar
+        android:id="@+id/toolbarnino"
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:background="#8DDBE6"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:title="TRAMIENTOS PARA NIÑOS"
+        android:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
+        app:titleTextColor="#00000E" />
+
+    <ListView
+        android:id="@+id/lvNino"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

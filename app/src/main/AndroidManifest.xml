@@ -16,6 +16,18 @@
             android:name=".listado_paciente"
             android:exported="true" />
         <activity
+            android:name=".lista_tratamiento"
+            android:exported="true" />
+        <activity
+            android:name=".tratamiento_estetico"
+            android:exported="true" />
+        <activity
+            android:name=".tratamiento_nino"
+            android:exported="true" />
+        <activity
+            android:name=".tratamiento_adulto"
+            android:exported="true" />
+        <activity
             android:name=".RegistrarPaciente"
             android:exported="true" />
         <activity
