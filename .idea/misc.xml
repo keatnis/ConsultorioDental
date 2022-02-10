@@ -3,16 +3,43 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Huawei/AndroidStudioProjects/ConsultorioDental/app/src/main/res/drawable/splash.xml" value="0.183" />
-        <entry key="..\:/Users/Huawei/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout-land/activity_principal.xml" value="0.2625" />
-        <entry key="..\:/Users/Huawei/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_lista_citas.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Huawei/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Users/Huawei/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_principal.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Huawei/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_registrar_paciente.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Huawei/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_servicios.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Huawei/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_splash.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Huawei/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/registrar_cita.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/drawable-mdpi/border_button.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/drawable-mdpi/border_top.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/drawable-mdpi/ic_delete.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/drawable-mdpi/ic_edit.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/drawable-mdpi/ic_notificacion.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/drawable-mdpi/splash.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/drawable/botton.xml" value="0.25" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/drawable/ic_contacto.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/drawable/ic_launcher_background.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/drawable/person.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/drawable/splash.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout-land/activity_principal.xml" value="0.2208994708994709" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.33" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout-w936dp/activity_login.xml" value="0.67" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_lista_citas.xml" value="0.2" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_lista_tratamiento.xml" value="0.5" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_listado_paciente.xml" value="0.25" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_login.xml" value="0.2128623188405797" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_menu_principal.xml" value="0.33" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_modificar_paciente.xml" value="0.33" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_principal.xml" value="0.33" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_radio_button.xml" value="0.25" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_registrar_paciente.xml" value="0.33" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_servicios.xml" value="0.25" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_tratamiento_adulto.xml" value="0.25" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_tratamiento_estetico.xml" value="0.22" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_tratamiento_nino.xml" value="0.2" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/activity_ver_paciente.xml" value="0.23278985507246377" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/ic_notificacion.xml" value="0.134375" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/lista_item_paciente.xml" value="0.2609375" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/registrar_cita.xml" value="0.22" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/layout/splash.xml" value="0.2609375" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/sosam/AndroidStudioProjects/ConsultorioDental/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.27708333333333335" />
       </map>
     </option>
   </component>

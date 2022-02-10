@@ -4,7 +4,7 @@ import java.sql.Time;
 import java.util.Date;
 
 public class Paciente {
-
+   private  int id;
     private String nombres;
     private String apellidos;
     private String telefono;
@@ -68,5 +68,13 @@ public class Paciente {
 
     public void setEdad(int edad) {
         this.edad = edad;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

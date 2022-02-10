@@ -6,9 +6,11 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ConsultorioDental">
+        <activity
+            android:name=".MenuPrincipal"
+            android:exported="true" />
         <activity
             android:name=".modificar_paciente"
             android:exported="true" />
@@ -19,13 +21,13 @@
             android:name=".lista_tratamiento"
             android:exported="true" />
         <activity
-            android:name=".tratamiento_estetico"
+            android:name=".servicios.tratamiento_estetico"
             android:exported="true" />
         <activity
-            android:name=".tratamiento_nino"
+            android:name=".servicios.tratamiento_nino"
             android:exported="true" />
         <activity
-            android:name=".tratamiento_adulto"
+            android:name=".servicios.tratamiento_adulto"
             android:exported="true" />
         <activity
             android:name=".RegistrarPaciente"
@@ -37,12 +39,11 @@
             android:name=".Principal"
             android:exported="true" />
         <activity
-            android:name=".Servicios"
+            android:name=".servicios.Servicios"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            android:theme="@style/Splash">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

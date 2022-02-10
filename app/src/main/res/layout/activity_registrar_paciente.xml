@@ -43,86 +43,144 @@
             android:layout_marginRight="40dp"
             android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/etNombres"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Nombre"
-                android:inputType="textPersonName" />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/etApellidos"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Apellido"
-                android:inputType="textPersonName" />
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Datos del cliente"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
 
-            <EditText
-                android:id="@+id/etCodigo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Edad"
-                android:inputType="number" />
+                <EditText
+                    android:id="@+id/etNombres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:foreground="@drawable/border_top"
+                    android:hint="Nombre"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    />
 
-            <EditText
-                android:id="@+id/etFono"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:maxLength="10"
-                android:hint="Telefono "
-                android:inputType="phone" />
+                <EditText
+                    android:id="@+id/etApellidos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:foreground="@drawable/border_top"
+                    android:hint="Apellido"
+                    android:inputType="textPersonName" />
 
-            <EditText
-                android:id="@+id/etFecha"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:editable="true"
-                android:ems="10"
-                android:focusable="false"
-                android:hint="Fecha"
-                android:inputType="date" />
+                <EditText
+                    android:id="@+id/etCodigo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:foreground="@drawable/border_top"
+                    android:hint="Edad"
+                    android:maxLength="2"
+                    android:inputType="number" />
 
-            <EditText
-                android:id="@+id/etHora"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:focusable="false"
-                android:hint="Hora de inicio"
-                android:inputType="time" />
+                <EditText
+                    android:id="@+id/etFono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:foreground="@drawable/border_top"
+                    android:hint="Telefono "
+                    android:inputType="phone"
+                    android:maxLength="10" />
+            </LinearLayout>
 
-            <EditText
-                android:id="@+id/etHora2"
+            <Space
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:focusable="false"
-                android:hint="Hora de finalizacón"
-                android:inputType="time" />
+                android:layout_height="10dp" />
 
-            <EditText
-                android:id="@+id/editTextTextPersonName"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Servicio requerido"
-                android:inputType="textPersonName" />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btGuardar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Guardar" />
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Datos de la cita"
+                    android:textSize="16sp" />
 
-            <Button
-                android:id="@+id/btRetorno"
-                android:layout_width="match_parent"
+                <EditText
+                    android:id="@+id/etFecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="true"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:foreground="@drawable/border_top"
+                    android:hint="Fecha"
+                    android:inputType="date" />
+
+                <EditText
+                    android:id="@+id/etHora"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:foreground="@drawable/border_top"
+                    android:hint="Hora de inicio"
+                    android:inputType="time" />
+
+                <EditText
+                    android:id="@+id/etHora2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:foreground="@drawable/border_top"
+                    android:hint="Hora de finalizacón"
+                    android:inputType="time" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:foreground="@drawable/border_button"
+                    android:hint="Servicio requerido"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Retorna" />
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="fill_horizontal"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btGuardar"
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:foreground="@drawable/border_top"
+                    android:text="Guardar" />
+
+                <Button
+                    android:id="@+id/btRetorno"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:foreground="@drawable/border_top"
+                    android:text="Retorna" />
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>

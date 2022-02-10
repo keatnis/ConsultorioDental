@@ -36,7 +36,7 @@ import java.util.ArrayList;
         @Override
         public void onCreate(SQLiteDatabase db) {
 
-            String SQL = "CREATE TABLE " + tabla + "( NOM_CLI TEXT PRIMARY KEY, APE_CLI TEXT,EDAD_CLI INTEGER,FON_CLI TEXT,FECHA_CITA TEXT,HORA_INICIO TEXT,HORA_FINAL TEXT )";
+            String SQL = "CREATE TABLE " + tabla + "( id INTEGER  PRIMARY KEY  AUTOINCREMENT, NOM_CLI TEXT , APE_CLI TEXT,EDAD_CLI INTEGER,FON_CLI TEXT,FECHA_CITA TEXT,HORA_INICIO TEXT,HORA_FINAL TEXT )";
             db.execSQL(SQL);
         }
         //metodo que valida la existencia de la tabla clinte
@@ -49,7 +49,9 @@ import java.util.ArrayList;
         }
 
         //metodo para agregar un cliente
-        public void nuevoCliente(Paciente objC) {
+        public long nuevoCliente(Paciente objC) {
+            long id = 0;
+            try {
             //obtener los valores a registrar
             ContentValues values = new ContentValues();
 
@@ -63,10 +65,15 @@ import java.util.ArrayList;
 
             //ejecutar el metodo insert
             SQLiteDatabase db = this.getWritableDatabase();
-            db.insert(tabla,null,values);
+            id = db.insert(tabla,null,values);
             //cerrar la conexion
-            db.close();
+                db.close();
+            } catch (Exception ex) {
+                ex.toString();
 
+            }
+
+            return id;
         }
 
         //metodo para listar los clientes
@@ -98,20 +105,21 @@ import java.util.ArrayList;
 
             //ejecutando la sentencia UPDATE
             SQLiteDatabase db =getWritableDatabase();
-            db.execSQL("UPDATE CLIENTE SET NOM_CLI='"+nom+"', APE_CLI='"+ape+"', FON_CLI='"+tel+"' where COD_CLIENTE='"+cod+"'");
+            db.execSQL("UPDATE CLIENTE SET FECHA_CITA='"+nom+"', APE_CLI='"+ape+"', FON_CLI='"+tel+"' where id='"+cod+"'");
 
             db.close();
         }
         //metodo para eliminar un registro del cliente
-        public void eliminarCliente(Paciente objC){
+        public boolean eliminarCliente(Paciente objC){
             //obtener el codigo del cliente a eliminar
-
-            int cod=objC.getEdad();
+            //(PAciente objC)
+             int cod=objC.getId();
 
             //ejecutando la sentecnica DELETE
             SQLiteDatabase db =getWritableDatabase();
-            db.execSQL("delete from cliente where cod_cliente="+cod);
+            db.execSQL("delete from cliente where id="+cod);
             db.close();
+            return false;
         }
 
 
@@ -129,14 +137,14 @@ import java.util.ArrayList;
             if (cursorContactos.moveToFirst()) {
                 do {
                     contacto = new Paciente();
-
-                    contacto.setNombres(cursorContactos.getString(0));
-                    contacto.setApellidos(cursorContactos.getString(1));
-                    contacto.setEdad(cursorContactos.getInt(2));
-                    contacto.setTelefono(cursorContactos.getString(3));
-                    contacto.setFecha(cursorContactos.getString(4));
-                    contacto.setHoraInicio(cursorContactos.getString(5));
-                    contacto.setHoraFinalizacion(cursorContactos.getString(6));
+                    contacto.setId(cursorContactos.getInt(0));
+                    contacto.setNombres(cursorContactos.getString(1));
+                    contacto.setApellidos(cursorContactos.getString(2));
+                    contacto.setEdad(cursorContactos.getInt(3));
+                    contacto.setTelefono(cursorContactos.getString(4));
+                    contacto.setFecha(cursorContactos.getString(5));
+                    contacto.setHoraInicio(cursorContactos.getString(6));
+                    contacto.setHoraFinalizacion(cursorContactos.getString(7));
 
                     listaContactos.add(contacto);
                 } while (cursorContactos.moveToNext());
@@ -145,6 +153,30 @@ import java.util.ArrayList;
             cursorContactos.close();
 
             return listaContactos;
+        }
+        public Paciente verContacto(int id) {
+
+
+            SQLiteDatabase db = getWritableDatabase();
+
+            Paciente contacto = null;
+            Cursor cursorContactos;
+
+            cursorContactos = db.rawQuery("SELECT NOM_CLI,APE_CLI,FECHA_CITA  FROM " +tabla+ " WHERE id = " + id + " LIMIT 1", null);
+
+            if (cursorContactos.moveToFirst()) {
+
+
+                contacto.setNombres(cursorContactos.getString(0));
+                contacto.setApellidos(cursorContactos.getString(1));
+                contacto.setFecha(cursorContactos.getString(2));
+
+
+            }
+
+            cursorContactos.close();
+
+            return contacto;
         }
 
     }

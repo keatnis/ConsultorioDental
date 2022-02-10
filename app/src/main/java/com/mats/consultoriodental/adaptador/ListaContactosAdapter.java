@@ -1,4 +1,4 @@
-package com.mats.consultoriodental;
+package com.mats.consultoriodental.adaptador;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,6 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import com.mats.consultoriodental.Paciente;
+import com.mats.consultoriodental.R;
+import com.mats.consultoriodental.modificar_paciente;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -68,6 +71,31 @@ public class ListaContactosAdapter extends RecyclerView.Adapter<ListaContactosAd
         }
         notifyDataSetChanged();
     }
+    public void filtrado2(final String txtBuscar) {
+
+        int longitud = txtBuscar.length();
+
+        if (longitud ==0) {
+            listaContactos.clear();
+
+        } else {
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+                List<Paciente> collecion = listaContactos.stream()
+                        .filter(i -> i.getNombres().toLowerCase().contains(txtBuscar.toLowerCase()))
+                        .collect(Collectors.toList());
+                listaContactos.clear();
+                listaContactos.addAll(collecion);
+            } else {
+                for (Paciente c : listaOriginal) {
+                    if (c.getNombres().toLowerCase().contains(txtBuscar.toLowerCase())) {
+                        listaContactos.clear();
+                        listaContactos.add(c);
+                    }
+                }
+            }
+        }
+        notifyDataSetChanged();
+    }
 
     @Override
     public int getItemCount() {
@@ -94,7 +122,10 @@ public class ListaContactosAdapter extends RecyclerView.Adapter<ListaContactosAd
                 public void onClick(View view) {
                     Context context = view.getContext();
                     Intent intent = new Intent(context, modificar_paciente.class);
-                    intent.putExtra("ID", listaContactos.get(getAdapterPosition()).getEdad());
+                    intent.putExtra("ID", listaContactos.get(getAdapterPosition()).getId());
+                    intent.putExtra("NOM_CLI",listaContactos.get(getAdapterPosition()).getNombres());
+                    intent.putExtra("APE_CLI",listaContactos.get(getAdapterPosition()).getApellidos());
+                    intent.putExtra("FON_CLI",listaContactos.get(getAdapterPosition()).getTelefono());
                     context.startActivity(intent);
                 }
             });

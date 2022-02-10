@@ -1,13 +1,14 @@
-package com.mats.consultoriodental;
+package com.mats.consultoriodental.adaptador;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
-import android.widget.RatingBar;
+
 import android.widget.TextView;
+
+import com.mats.consultoriodental.R;
 
 public class Adatratamientoo extends BaseAdapter {
     private static LayoutInflater inflater=null;
@@ -22,7 +23,7 @@ public class Adatratamientoo extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return 0;
+        return informacion.length;
     }
 
     public Object getItem(int position) {
@@ -37,7 +38,7 @@ public class Adatratamientoo extends BaseAdapter {
         TextView tvCosto=(TextView) vista.findViewById(R.id.tvCosto);
 
         tvTitulo.setText(informacion[position][0]);
-        tvCosto.setText(informacion[position][3]);
+        tvCosto.setText(informacion[position][1]);
         return vista;
 
 

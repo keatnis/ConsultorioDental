@@ -30,13 +30,7 @@ public class MainActivity extends AppCompatActivity {
         entrar = findViewById(R.id.btnEntrar);
 
 
-        entrar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent visor=new Intent(getApplicationContext(), Principal.class);
-                startActivity(visor);
-            }
-        });
+
 
 
     }
@@ -52,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             msg.create();
             msg.show();
         } else {
-            if (usr.equals("Admi") && pwd.equals("12345")) {
+            if (usr.equals("Admin") && pwd.equals("12345")) {
                 Intent i = new Intent(this, Principal.class);
                 i.putExtra("usuario", usr);
                 startActivity(i);

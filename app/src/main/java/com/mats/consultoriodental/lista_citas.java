@@ -8,16 +8,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
 import android.widget.SearchView;
 
 
+import com.mats.consultoriodental.adaptador.ListaContactosAdapter;
 
 import java.util.ArrayList;
 
@@ -27,6 +23,7 @@ public class lista_citas extends AppCompatActivity implements SearchView.OnQuery
     ArrayList<Paciente> listaArrayContactos;
 
     ListaContactosAdapter adapter;
+    Button btRetornar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,20 +32,27 @@ public class lista_citas extends AppCompatActivity implements SearchView.OnQuery
         txtBuscar = findViewById(R.id.txtBuscar);
         listaContactos = findViewById(R.id.listadoPacientes);
         listaContactos.setLayoutManager(new LinearLayoutManager(this));
+        btRetornar =findViewById(R.id.btReturn);
 
         DAOPaciente dbContactos = new DAOPaciente(lista_citas.this);
 
         listaArrayContactos = new ArrayList<>();
-
         adapter = new ListaContactosAdapter(dbContactos.mostrarContactos());
         listaContactos.setAdapter(adapter);
-
-
-
-
         txtBuscar.setOnQueryTextListener(this);
-    }
 
+        btRetornar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent visor=new Intent(lista_citas.this, Principal.class);
+                startActivity(visor);
+            }
+        });
+
+    }
+    public void clicRetorno(){
+
+    }
 
     @Override
     public boolean onQueryTextSubmit(String query) {

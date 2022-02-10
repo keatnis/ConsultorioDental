@@ -29,33 +29,32 @@ public class RegistrarPaciente extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrar_paciente);
-        etCodigo = (EditText)findViewById(R.id.etCodigo);
+        etCodigo = (EditText) findViewById(R.id.etCodigo);
         etNombres = (EditText) findViewById(R.id.etNombres);
         etApellidos = (EditText) findViewById(R.id.etApellidos);
         etFono = (EditText) findViewById(R.id.etFono);
 
 
-        efecha=(EditText)findViewById(R.id.etFecha);
-        ehora=(EditText)findViewById(R.id.etHora);
-        ehora2 =findViewById(R.id.etHora2);
+        efecha = (EditText) findViewById(R.id.etFecha);
+        ehora = (EditText) findViewById(R.id.etHora);
+        ehora2 = findViewById(R.id.etHora2);
 
         efecha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Calendar c= Calendar.getInstance();
-                dia=c.get(Calendar.DAY_OF_MONTH);
-                mes=c.get(Calendar.MONTH);
-                ano=c.get(Calendar.YEAR);
-
+                final Calendar c = Calendar.getInstance();
+                dia = c.get(Calendar.DAY_OF_MONTH);
+                mes = c.get(Calendar.MONTH);
+                ano = c.get(Calendar.YEAR);
 
 
                 DatePickerDialog datePickerDialog = new DatePickerDialog(RegistrarPaciente.this, new DatePickerDialog.OnDateSetListener() {
                     @Override
-                    public void onDateSet(DatePicker view, int dayOfMonth, int monthOfYear, int year ) {
-                        efecha.setText(dayOfMonth+"/"+(monthOfYear+1)+"/"+year);
+                    public void onDateSet(DatePicker view, int dayOfMonth, int monthOfYear, int year) {
+                        efecha.setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);
                     }
                 }
-                        ,2022,mes,dia);
+                        , 2022, mes, dia);
                 datePickerDialog.show();
             }
         });
@@ -70,7 +69,7 @@ public class RegistrarPaciente extends AppCompatActivity {
                 TimePickerDialog timePickerDialog = new TimePickerDialog(RegistrarPaciente.this, new TimePickerDialog.OnTimeSetListener() {
                     @Override
                     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-                        ehora.setText(hourOfDay + ":" + minute);
+                        ehora.setText(hourOfDay + ":" + minute + " Hrs.");
 
                     }
                 }, hora, minutos, false);
@@ -88,41 +87,41 @@ public class RegistrarPaciente extends AppCompatActivity {
                 TimePickerDialog timePickerDialog = new TimePickerDialog(RegistrarPaciente.this, new TimePickerDialog.OnTimeSetListener() {
                     @Override
                     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-                        ehora2.setText(hourOfDay + ":" + minute);
+                        ehora2.setText(hourOfDay + ":" + minute + " Hrs");
                     }
                 }, hora, minutos, false);
                 timePickerDialog.show();
             }
         });
 
-
-
-
-
         btGuardar = (Button) findViewById(R.id.btGuardar);
         btGuardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                grabar(etNombres.getText().toString(),etApellidos.getText().toString(),Integer.parseInt(etCodigo.getText().toString()),etFono.getText().toString(),efecha.getText().toString(),ehora.getText().toString(),ehora2.getText().toString());
+                grabar(Integer.parseInt(etCodigo.getText().toString()), etNombres.getText().toString(), etApellidos.getText().toString(), Integer.parseInt(etCodigo.getText().toString()), etFono.getText().toString(), efecha.getText().toString(), ehora.getText().toString(), ehora2.getText().toString());
                 startActivity(new Intent(RegistrarPaciente.this, Principal.class));
 
 
             }
         });
-
         btRetorno = (Button) findViewById(R.id.btRetorno);
         btRetorno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RegistrarPaciente.this, MainActivity.class));
+                startActivity(new Intent(RegistrarPaciente.this, Principal.class));
             }
         });
 
+
+
     }
 
-    private void grabar( String nombres, String apellidos,int edad,String telefono,String fecha,String hora1,String hora2) {
-        Paciente  objC = new Paciente();
 
+
+
+    private void grabar(int id, String nombres, String apellidos,int edad,String telefono,String fecha,String hora1,String hora2) {
+        Paciente  objC = new Paciente();
+        objC.setId(id);
         objC.setNombres(nombres);
         objC.setApellidos(apellidos);
         objC.setEdad(edad);
