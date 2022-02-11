@@ -149,6 +149,6 @@
             android:id="@+id/imageButton"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            app:srcCompat="@drawable/ic_notificacion" />
+            />
     </LinearLayout>
 </LinearLayout>

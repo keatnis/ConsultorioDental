@@ -2,7 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.ConsultorioDental" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#5472E8</item>
+        <item name="colorPrimary">#BBD7CB
+        </item>
         <item name="colorPrimaryVariant">#7AD5E1</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
@@ -13,7 +14,5 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
-    <style name="Splash" parent="Theme.ConsultorioDental">
-        <item name="android:windowBackground">@drawable/ic_notificacion</item>
-    </style>
+
 </resources>

@@ -8,9 +8,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.ConsultorioDental">
-        <activity
-            android:name=".MenuPrincipal"
-            android:exported="true" />
+
         <activity
             android:name=".modificar_paciente"
             android:exported="true" />
@@ -42,7 +40,7 @@
             android:name=".servicios.Servicios"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MenuPrincipal"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
